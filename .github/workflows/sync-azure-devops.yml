@@ -41,7 +41,7 @@ jobs:
     # Step 5: Commit and push changes to Azure DevOps repo
     - name: Commit and push changes to Azure DevOps
       run: |
-        git remote add github https:///$GITHUB_TOKEN@github.com/bhanunallabati/ado_sync.git
+        git remote add github https://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@github.com/bhanunallabati/ado_sync.git
         git add .
         git commit -m "Sync code from GitHub to Azure DevOps"
         git push github main --force  # Force push the latest code to GitHub
