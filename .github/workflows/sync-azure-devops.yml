@@ -41,7 +41,6 @@ jobs:
     # Step 5: Commit and push changes to Azure DevOps repo
     - name: Commit and push changes to Azure DevOps
       run: |
-        cd ../  # Go back to the parent directory (GitHub repo content copied here)
         git add .
         git commit -m "Sync code from GitHub to Azure DevOps"
         git remote add azure https://$AZURE_DEVOPS_PAT@${{ secrets.AZURE_REPO_URL }}
