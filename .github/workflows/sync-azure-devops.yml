@@ -23,7 +23,7 @@ jobs:
     # Step 3: Clone the Azure DevOps repository
     - name: Clone Azure DevOps Repository
       run: |
-        git clone https://$AZURE_DEVOPS_PAT@${{ secrets.AZURE_REPO_URL }} azure-repo
+        git clone https://DfLhmkmqszCkeHj2yWs2NgVnRFIUtWup8UtbRyhL6MV1En5tYv4jJQQJ99BBACAAAAAAAAAAAAASAZDO2Bvf@dev.azure.com/az400labms/eShopOnWeb/_git/eShopOnWeb azure-repo
         cd azure-repo
         git fetch --all
         git checkout main  # You can change this if you're syncing with another branch
