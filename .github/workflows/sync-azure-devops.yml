@@ -32,6 +32,10 @@ jobs:
     # Step 4: Copy content from GitHub to Azure DevOps repo
     - name: Copy GitHub content to Azure DevOps repo
       run: |
+        pwd  
+        echo "pwd"
+        ls -ltr 
+        echo "ls -ltr"
         cp -r * ../  # Copy all the content from the current directory to the parent (Azure repo)
 
     # Step 5: Commit and push changes to Azure DevOps repo
