@@ -1,5 +1,6 @@
 name: Sync GitHub Repo with Azure DevOps Repo
-
+permissions:
+  contents: write  #
 on:
   push:
     branches:
