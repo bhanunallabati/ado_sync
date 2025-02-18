@@ -35,7 +35,7 @@ jobs:
         pwd  
         echo "pwd"
         ls -ltr 
-        echo "ls -ltr"
+        echo "ls -ltra"
         cp -r azure-repo/* .  # Copy all the content from the current directory to the parent (Azure repo)
 
     # Step 5: Commit and push changes to Azure DevOps repo
