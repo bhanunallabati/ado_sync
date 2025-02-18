@@ -43,6 +43,7 @@ jobs:
       run: |
         git add .
         git commit -m "Sync code from GitHub to Azure DevOps"
+        git remote -v
         git push github main --force  # Force push the latest code to GitHub
 
     # Step 6: Clean up
