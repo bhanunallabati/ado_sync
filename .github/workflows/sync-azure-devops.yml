@@ -32,6 +32,10 @@ jobs:
     # Step 4: Copy content from GitHub to Azure DevOps repo
     - name: Copy GitHub content to Azure DevOps repo
       run: |
+        if git diff --exit-code; then
+          echo "No changes detected. Skipping the sync."
+          exit 0
+        if
         pwd  
         echo "pwd"
         ls -ltr 
