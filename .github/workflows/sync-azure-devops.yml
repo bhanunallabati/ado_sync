@@ -2,9 +2,8 @@ name: Sync GitHub Repo with Azure DevOps Repo
 permissions:
   contents: write  #
 on:
-  push:
-    branches:
-      - main  # This will trigger the workflow when changes are pushed to the main br
+  schedule:
+    - cron: '*/5 * * * *'  # This cron expression schedules the job to run every 5 minutes
 
 jobs:
   sync:
